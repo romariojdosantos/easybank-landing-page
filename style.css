@@ -41,11 +41,10 @@ a {
   background-color: white;
   padding: 30px 0;
   align-items: center;
-  align-content: center;
 }
 
-.logo-img {
-  
+.header div {
+  justify-content: space-between;
 }
 
 .nav-menu ul {
@@ -60,7 +59,7 @@ a {
 .primary-btn {
   background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   color: var(--White);
-  padding: 10px 30px;
+  padding: 15px 40px;
   border-radius: 60px;
 }
 
@@ -68,62 +67,73 @@ a {
   max-width: 1140px;
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 /* main */
 
-.container1 {
-  margin-right: 0;
-  margin-left: 250px;
+.main::after {
+  content: '';
   display: block;
-}
-
-.intro {
-  float: left;
-  padding-top: 100px;
-  width: 800px;
+  background-image: url('images/image-mockups.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 120%; 
+  background-position-y: 100%; 
+  height: 800px;
+  z-index: 100;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: relative;
 }
 
 .main {
-  display: flex;
   background-image: url('images/bg-intro-desktop.svg');
+  background-position-x: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right -150px;
+  background-size: 60%;
+  background-position-y: -210px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+
+
+
+.intro {
+ display: inline;
+ position: absolute;
+ z-index: 0;
 }
 
 .intro h1 {
   font-weight: 300;
   font-size: 50px;
   color: var(--Dark-Blue);
-  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .intro p {
   color: var(--Grayish-Blue);
   line-height: 22px;
   font-size: 16px;
-  margin-bottom: 40px;
+  margin: 20px 0 40px 0;
 }
 
-.mockup-img {  
-  float: right;
-  max-width: 700px;
+/* easybank */
+
+.easybank {
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+  padding: 60px 0;
+  background-color: #f4f5f7;
 }
 
-/* .main {
-  background-image: url('images/bg-intro-desktop.svg');
-  background-position: top right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-} */
-
-
-
-
-
+.easybank-row {
+  flex: 1 0 auto;
+}
 
 
 
